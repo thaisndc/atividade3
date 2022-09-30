@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Html 2</title>
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+</head>
+
+<body>
+    <main>
+        <div>
+            <form action="cadastro.php" method="post" class="form-login">
+                <label for="login">
+                    Nome*
+                    <input type="text" name="Nome" placeholder="Digite seu Nome" id="login" required
+                        oninvalid="this.setCustomValidity('Preencha o campo Nome.')"
+                        oninput="this.setCustomValidity('')" />
+                </label>
+                <label>
+                    E-mail*
+                    <input type="email" name="email" placeholder="Digite o E-mail" id="email" required
+                        oninvalid="this.setCustomValidity('Preencha o campo de email')"
+                        oninput="this.setCustomValidity('')" />
+                </label>
+                <label for="password">
+                    Senha*
+                    <input type="password" name="password" required placeholder="Digite a senha" id="password"
+                        title="A senha deve conter, ao menos uma letra minúscula e um maiuscula" />
+                </label>
+
+                <label for="password">
+                    Confirme sua senha*
+                    <input type="password" name="password" required placeholder="Confirme sua senha" id="password"
+                        title="A senha deve conter, ao menos uma letra minúscula" />
+                </label>
+                <button type="submit">Cadastrar</button>
+                <div class="forGet">
+                <p><a href="#">Esqueci a senha</a></p>
+                <p><a href="#">Ainda não sou cadastrado(a)</a></p>
+                </div>
+        </div>
+        </form>
+    </main>
+</body>
+
+</html>
